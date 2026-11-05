@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fredrick Odhiambo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP MENU -->
+    <nav>
+        <button onclick="show('home')">Home</button>
+        <button onclick="show('experience')">Personal Experience</button>
+        <button onclick="show('contacts')">Contacts</button>
+        <button onclick="show('hobbies')">Hobbies</button>
+    </nav>
+
+    <!-- MOVING NAME -->
+    <marquee direction="right">
+        <h1>Fredrick Odhiambo</h1>
+    </marquee>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <h2>Home</h2>
+
+        <img src="smart.jpg" class="photo" alt="My Photo">
+
+        <hr>
+
+        <p>My name is Fredrick Odhiambo. I am a Bachelor of Science in Information Technology student at Kisii
+            University.</p>
+
+        <p>I come from Kisumu, Kenya. I enjoy learning about technology and improving my computer skills.</p>
+
+        <p>After completing my course, I hope to become a skilled IT professional and contribute to the technology
+            industry.</p>
+    </section>
+
+    <!-- PERSONAL EXPERIENCE PAGE -->
+    <section id="experience" style="display:none">
+        <h2>Personal Experience</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Institutions Attended</th>
+                <th>Awards Given</th>
+            </tr>
+
+            <tr>
+                <td>2012–2020</td>
+                <td>Konya Primary School</td>
+                <td>Not provided</td>
+            </tr>
+
+            <tr>
+                <td>2021–2024</td>
+                <td>St. Mary's Yala</td>
+                <td>Not provided</td>
+            </tr>
+
+            <tr>
+                <td>2025–Present</td>
+                <td>Kisii University</td>
+                <td>Not provided</td>
+            </tr>
+        </table>
+
+        <h3>Work Experience</h3>
+        <p>Online Research, Video Annotation, Image Annotation and Audio Annotation.</p>
+    </section>
+
+    <!-- CONTACTS PAGE -->
+    <section id="contacts" style="display:none">
+        <h2>Contacts</h2>
+
+        <p>Phone: 0794011205</p>
+        <p>Email: odhiambof134@gmail.com</p>
+
+        <a href="mailto:odhiambof134@gmail.com">Email me</a>
+
+        <hr>
+
+        <h3>Send Me a Message</h3>
+
+        <form>
+            Enter your Name:<br>
+            <input type="text" required><br><br>
+
+            E-mail address:<br>
+            <input type="email" required><br><br>
+
+            Message Subject:<br>
+            <input type="text"><br><br>
+
+            Enter your Message:<br>
+            <textarea rows="8" cols="35" required></textarea><br><br>
+
+            <input type="checkbox">
+            E-mail a copy of this message to your own address.<br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- HOBBIES PAGE -->
+    <section id="hobbies" style="display:none">
+        <h2>Hobbies</h2>
+
+        <ol>
+            <li>Reading</li>
+            <li>Learning technology</li>
+            <li>Online research</li>
+        </ol>
+
+        <h3>Other Interests</h3>
+
+        <ul>
+            <li>Listening to music</li>
+            <li>Travelling</li>
+            <li>Playing games</li>
+        </ul>
+    </section>
+
+    <!-- BOTTOM MENU -->
+    <nav>
+        <button onclick="show('home')">Home</button>
+        <button onclick="show('experience')">Personal Experience</button>
+        <button onclick="show('contacts')">Contacts</button>
+        <button onclick="show('hobbies')">Hobbies</button>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; Fredrick Odhiambo
+    </footer>
+
+    <!-- PAGE NAVIGATION -->
+    <script>
+        function show(page) {
+            let pages = document.getElementsByTagName('section');
+
+            for (let i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            document.getElementById(page).style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
